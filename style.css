@@ -21,3 +21,39 @@
     top: 0;
     width: 100%
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coverText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+.card {
+    background-color: #444;
+    margin: 50px;
+}
+
+.card > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+}

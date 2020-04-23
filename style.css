@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+.zone {
+    color: #FFF;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: all 0.4 linear;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -5,16 +17,16 @@
     font-size: 0.7em;
 }
 
-@media only screen and (max-width: 600px) {
-    .main-nav {
-         font-size: 0.5em;
-         padding: 0; 
-    }
-}
-.push {
-    margin-left: auto;
+a.hover {
+    color: #686de0;
 }
 
+@media only screen and (max-width: 600px) {
+    .main-nav {    
+    font-size: 0.5em;
+    padding: 0px; 
+    }
+}
 .sticky {
     position: fixed;
     z-index: 1;
@@ -22,6 +34,19 @@
     width: 100%
 }
 
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+    
+}
+
+a { 
+    color: #f5f5f6;
+    text-decoration: none;
+}
 .container {
     height: 100vh;
     display: flex;
@@ -29,6 +54,10 @@
     justify-content: center;
 }
 
+.cover {
+    width: 100%;
+    height: 100%;
+}
 .coverText {
     position: absolute;
     left: 50%;
@@ -49,6 +78,9 @@
     margin: 50px;
 }
 
+.card p {
+    font-size: 1rem;
+}
 .card > img {
     max-width: 100%;
     height: auto;
@@ -60,4 +92,33 @@
 
 .card > .text {
     padding: 0 20px 20px;
+}
+
+button {
+    cursor: pointer;
+    background: gray;
+    border: 0;
+    font-size: 1rem;
+    font-family: Georgia;
+    color: cornflowerblue;
+    padding: 10px;
+    width: 100%
+}
+
+button:hover {
+    background-color: #fdf3b4;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: cornflowerblue;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.blue {
+    background: cornflowerblue;
 }
